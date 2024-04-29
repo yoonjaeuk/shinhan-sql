@@ -1,13 +1,13 @@
 show tables;
-start transaction;
-Use testdb;
+
 select * from testdb.Emp;
 
-update Emp set salary = 230
-where id = 3;
+select * from Emp 
+-- update Emp set salary = 220
+ where id = 3;
+ 
+show processlist;
+kill 25; -- kill query
 
-update Emp set salary = 240
-where id = 4;
-
--- rollback;
--- commit;
+desc Dept;
+select * from Dept;
